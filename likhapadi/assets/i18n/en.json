@@ -1,0 +1,29 @@
+{
+    "app_bar": {
+        "title": "LikhaPadi"
+    },
+    "button": {
+        "cancel": "Cancel",
+        "change_language": "Change Language"
+    },
+    "language": {
+        "name": {
+            "en": "English",
+            "hi": "हिन्दी"
+        },
+        "selected_message": "Currently selected language is {language}",
+        "selection": {
+            "message": "Please select a language from the list",
+            "title": "Language Selection"
+        }
+    },
+    "home_page_slider": {
+        "pos": "P.O.S.",
+        "sales": "Sales",
+        "customers": "Customers",
+        "suppliers": "Suppliers",
+        "inventory": "Inventory",
+        "categories": "Categories",
+        "brand": "Brand"
+    }
+}

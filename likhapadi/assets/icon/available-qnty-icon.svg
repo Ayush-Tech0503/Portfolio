@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="62" height="62" viewBox="0 0 62 62">
+  <g id="available-qnty-icon" transform="translate(-1 -1)">
+    <path id="Path_1226" data-name="Path 1226" d="M33,63H63V39H33ZM45,41h6v2H45ZM35,41h8v4H53V41h8V61H35Z" fill="#0562a7"/>
+    <path id="Path_1227" data-name="Path 1227" d="M57,57h2v2H57Z" fill="#0562a7"/>
+    <path id="Path_1228" data-name="Path 1228" d="M53,57h2v2H53Z" fill="#0562a7"/>
+    <path id="Path_1229" data-name="Path 1229" d="M49,57h2v2H49Z" fill="#0562a7"/>
+    <path id="Path_1230" data-name="Path 1230" d="M61,21H59V1H33V21H31V1H5V21H3a2,2,0,0,0-2,2v2a2,2,0,0,0,2,2H8.263a7.939,7.939,0,0,0,3.322,8.665A15.025,15.025,0,0,0,1,50a5,5,0,0,0,3,4.576V63H31V50A15.025,15.025,0,0,0,20.415,35.665,7.939,7.939,0,0,0,23.737,27H61a2,2,0,0,0,2-2V23A2,2,0,0,0,61,21ZM43,3h6V5H43ZM35,3h6V7H51V3h6V21H51V17H41v4H35ZM49,21H43V19h6ZM15,3h6V5H15ZM7,3h6V7H23V3h6V21H23V17H13v4H7Zm8,18V19h6v2ZM3,25V23h7.726a8.069,8.069,0,0,0-1.644,2ZM6,55h4v6H6Zm9.5-7H12V43h7v5h5V61H12V55h3.5a3.5,3.5,0,0,0,0-7ZM21,44.414,22.586,46H21ZM29,50V61H26V46.586L20.414,41H10v7H7v2h8.5a1.5,1.5,0,0,1,0,3H6a3,3,0,0,1-3-3,13,13,0,0,1,26,0ZM16,35a6,6,0,1,1,6-6A6.006,6.006,0,0,1,16,35ZM61,25H22.918a8.047,8.047,0,0,0-1.644-2H61Z" fill="#0562a7"/>
+    <path id="Path_1231" data-name="Path 1231" d="M49,53H59v2H49Z" fill="#0562a7"/>
+  </g>
+</svg>

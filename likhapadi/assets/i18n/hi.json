@@ -1,0 +1,29 @@
+{
+    "app_bar": {
+        "title": "लिखापढ़ी"
+    },
+    "button": {
+        "cancel": "रद्द करे",
+        "change_language": "भाषा बदले "
+    },
+    "language": {
+        "name": {
+            "en": "English",
+            "hi": "हिन्दी"
+        },
+        "selected_message": "वर्तमान में चयनित भाषा है {language}",
+        "selection": {
+            "message": "कृपया सूची में से एक भाषा चुनें",
+            "title": "भाषा चयन"
+        }
+    },
+    "home_page_slider": {
+        "pos": "P.O.S.",
+        "sales": "बिक्री",
+        "customers": "ग्राहक",
+        "suppliers": "देने वाला",
+        "inventory": "वस्तुसूची",
+        "categories": "केटेगरी",
+        "brand": "ब्रांड"
+    }
+}

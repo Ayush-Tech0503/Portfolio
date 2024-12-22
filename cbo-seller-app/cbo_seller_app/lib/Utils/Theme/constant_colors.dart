@@ -1,0 +1,70 @@
+
+// ignore_for_file: constant_identifier_names
+
+import 'package:flutter/material.dart';
+class ConstantColor {
+  static const hideButtonColor=Color(0xffF9AD92);
+  static const primaryMainColor = Color(0xffee5816);
+  static const secondryBackgroundMainColor = Color(0xfffff9f5);
+  static const filedContainerColor = Color(0xffee5816);
+  static const primaryBackgroundMainColor = Colors.white;
+  static const primaryGreyColor = Color(0xffcecece);
+  static const notificationListColor = Color(0xfffff9f6);
+  static const landingScreenSubHaddingColor = Color(0xff575656);
+  static const textFieldColor = Color(0xffededed);
+  static const loginWithOtpButtonColor = Color(0xff102d4e);
+  static const drawerItemsColor = Color(0xff0d2641);
+  static const drawerDividerColor = Color(0xff0a1d32);
+  static const detailUnderLineTextColor = Color(0xff095BFF);
+  static const skyBlueColor = Color(0xff2593ce);
+  static const circleAvatar1 = Color(0xffffbea1);
+  static const circleAvatar2 = Color(0xffffe8de);
+  static const loginWithOtpLineColor = Color(0xffe8e8e8);
+  static const bottonNavIcons = Color(0xffffffff);
+  static const searchBoxColor = Color(0xfff6f6f6);
+  static const iconBackTPColor = Color(0x85f6f6f6);
+  static const homeScreenSlidingColor = Color(0xffddd5ff);
+  static const homeScreenAvatarBGColor = Color(0xfffff3eb);
+  static const carColor = Color(0xfff5f5f5);
+  static const carColor2 = Color(0xffe5e1e1);
+  static const gradientColor1 = Color(0xfffc8b58);
+  static const gradientColor2 = Color(0xfff05d1d);
+  static const buttonBGColor = Color(0xffab5129);
+  static const secondtryGrayColor = Color(0xffb2b2b2);
+  static const GrayLineColor = Color(0xffe6e0e0);
+  static const boxGrayColor = Color(0xfffff8f4);
+  static const chipColor = Color(0xff42a80e);
+  static const chipCompleteStatus = Color(0xff3a880d);
+  static const chipPendingStatus = Color(0xffe6b800);
+  static const chipFailedStatus = Color(0xffc11b0f);
+  static const locationIconColor= Color(0xffffe8de);
+  static const secondOfferCardColor= Color(0xffffceb8);
+  static const secondoryWhiteColors= Color(0xfffff1e9);
+  static const secondoryCardeColors= Color(0xfffff7f3);
+  static const secondoryCardeBoarder= Color(0xffffeae1);
+  static const primaryBlackColor= Color(0xff000000);
+  static const secondoryBlackColors= Color(0xff302f2f);
+  static const tabButtonBlackColors= Color(0xff3e3e3e);
+  static const subtitleGreyColor= Color(0xff757575);
+  static const secondoryMarketColors= Color(0xfff9f9f9);
+  static const textformFieldDisableColor= Color(0xfff2f2f2);
+  static const starRatingColor= Color(0xfff3bb4b);
+  static const calendarBGHeadColor= Color(0xffffe9df);
+  static const switchActiveColor= Color(0xffffc6ac);
+  static const progressBGolor= Color(0xffffeee6);
+  static const trackBGolor= Color(0xffffe8de);
+  static const sellerBGColor= Color(0xfffbfbfb);
+  static const profileGridBGolor= Color(0xfffff9f7);
+  static const imageBoxBoarderColor= Color(0xffE9E9E9);
+  static const productSubTextColor= Color(0xff8d8d8d);
+  static const facebookBGColor= Color(0xff3b5998);
+  static const whatsappBGColor= Color(0xff2bb418);
+  static const emailBGColor= Color(0xff264db5);
+  static const linkedInBGColor= Color(0xff027ab6);
+  static const instagramBGColor=  Color.fromARGB(255, 193, 53, 132);
+  static const twitterBGColor= Color(0xff50abf0);
+  static const youtubeBGColor= Color.fromARGB(255, 255, 0, 0);
+  static const pintrestBGColor= Color.fromARGB(255, 203, 32, 39);
+  static const transparent1 = Colors.transparent;
+
+}

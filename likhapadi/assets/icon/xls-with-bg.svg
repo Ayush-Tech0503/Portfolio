@@ -1,0 +1,13 @@
+<svg id="xls-with-bg" xmlns="http://www.w3.org/2000/svg" width="87" height="87" viewBox="0 0 87 87">
+  <path id="Path_1617" data-name="Path 1617" d="M86.889,46.6c.072-1.025.111-2.06.111-3.1A43.5,43.5,0,1,0,31.913,85.437Z" fill="#0562a7"/>
+  <path id="Path_1618" data-name="Path 1618" d="M185.748,111.278,152.383,77.913,119.1,138.435l11.676,11.676a43.528,43.528,0,0,0,54.975-38.833Z" transform="translate(-98.859 -64.674)" fill="#04375d"/>
+  <path id="Path_1619" data-name="Path 1619" d="M146.153,121.413l-3.843-43.5H119.1V117.63Z" transform="translate(-98.859 -64.674)" fill="#fff"/>
+  <path id="Path_1620" data-name="Path 1620" d="M279.023,117.63V91.152l-9.456-3.783-3.783-9.456H255.711l.06,43.5Z" transform="translate(-212.26 -64.674)" fill="#e8e6e6"/>
+  <path id="Path_1621" data-name="Path 1621" d="M314.991,91.152V77.913L328.23,91.152Z" transform="translate(-261.467 -64.674)" fill="#fff"/>
+  <rect id="Rectangle_339" data-name="Rectangle 339" width="46.526" height="20.804" transform="translate(20.237 52.956)" fill="#0562a7"/>
+  <g id="Group_649" data-name="Group 649" transform="translate(30.78 58.756)">
+    <path id="Path_1622" data-name="Path 1622" d="M190.429,355.388H187.69l-1.942-2.868-1.942,2.868h-2.662l3.215-4.6-3.009-4.4h2.662l1.736,2.623,1.736-2.623h2.688l-2.971,4.295Z" transform="translate(-181.144 -346.283)" fill="#fff"/>
+    <path id="Path_1623" data-name="Path 1623" d="M249.618,353.473v1.916H243.51v-9H245.8v7.086Z" transform="translate(-232.913 -346.284)" fill="#fff"/>
+    <path id="Path_1624" data-name="Path 1624" d="M291.465,346.785l-.862,1.787a6.706,6.706,0,0,0-2.88-.939c-.592,0-.99.219-.99.656,0,1.556,4.758.669,4.758,3.922,0,1.8-1.595,2.752-3.6,2.752a6.713,6.713,0,0,1-4.115-1.44l.887-1.762a5.612,5.612,0,0,0,3.254,1.35c.72,0,1.17-.27,1.17-.785,0-1.595-4.758-.643-4.758-3.832,0-1.659,1.427-2.714,3.588-2.714A6.756,6.756,0,0,1,291.465,346.785Z" transform="translate(-266.336 -345.782)" fill="#fff"/>
+  </g>
+</svg>

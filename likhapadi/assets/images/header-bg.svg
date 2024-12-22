@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1333.255" height="919.024" viewBox="0 0 1333.255 919.024">
+  <defs>
+    <radialGradient id="radial-gradient" cx="0.905" cy="0.79" r="1.138" gradientTransform="matrix(0.441, 0.898, -0.446, 0.219, 0.503, -0.058)" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#0562a7"/>
+      <stop offset="1" stop-color="#0e5082"/>
+    </radialGradient>
+    <linearGradient id="linear-gradient" x1="0.5" y1="0" x2="0.5" y2="1" gradientTransform="matrix(1, 0, 0, 1, 0, 0)" xlink:href="#radial-gradient"/>
+  </defs>
+  <g id="Group_489" data-name="Group 489" transform="translate(252.255 292.339)">
+    <g id="Group_155" data-name="Group 155">
+      <path id="Rectangle_6" data-name="Rectangle 6" d="M0,0H1081a0,0,0,0,1,0,0V473A110,110,0,0,1,971,583H110A110,110,0,0,1,0,473V0A0,0,0,0,1,0,0Z" fill="url(#radial-gradient)"/>
+      <circle id="Ellipse_16" data-name="Ellipse 16" cx="342.5" cy="342.5" r="342.5" transform="translate(569.28 375.104) rotate(167)" opacity="0.63" fill="url(#linear-gradient)"/>
+      <path id="Path_1005" data-name="Path 1005" d="M152.421,78.912c75.574,24.933,82.991,100.816,74.753,127.6-11.277,47.277-17.619,74.9-17.04,74.569A147.567,147.567,0,0,1,0,147.5c0-37.147,12.873-69.74,35.744-95.909C35.724,51.566,143.541,75.7,152.421,78.912Z" transform="translate(267.799 625.255) rotate(167)" opacity="0.63" fill="url(#linear-gradient)"/>
+    </g>
+    <text id="Sign_up" data-name="Sign up" transform="translate(410 295)" fill="#fff" font-size="60" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Sign up</tspan></text>
+    <g id="Status_bar" data-name="Status bar" transform="translate(104.017)">
+      <rect id="Bounds" width="354" height="72" transform="translate(621.983)" fill="none"/>
+      <g id="Time" transform="translate(799.448 12.005)" opacity="0.9">
+        <text id="_12:30" data-name="12:30" transform="translate(0 39)" fill="#fff" font-size="41" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">12:30</tspan></text>
+      </g>
+      <g id="Battery" transform="translate(741.046 12.005)">
+        <path id="Bounds-2" data-name="Bounds" d="M0,0H48.018V48.018H0Z" fill="none"/>
+        <path id="Shape" d="M21.007,3.7V1H12V3.7H3V43.016H30.01V3.7Z" transform="translate(6.003 2.001)" fill="#fff"/>
+      </g>
+      <g id="Cellular" transform="translate(60.023 12.005)">
+        <path id="Bounds-3" data-name="Bounds" d="M0,0H48.018V48.018H0Z" fill="none"/>
+        <path id="Shape-2" data-name="Shape" d="M0,43.016H42.016V1Z" transform="translate(0 2.001)" fill="#fff"/>
+      </g>
+      <g id="Wifi" transform="translate(0 12.005)">
+        <path id="Bounds-4" data-name="Bounds" d="M2,0H50.018V48.018H2Z" transform="translate(1.001)" fill="none"/>
+        <path id="Shape-3" data-name="Shape" d="M55.021,10A44.3,44.3,0,0,0,28.01,1,44.3,44.3,0,0,0,1,10L28.01,43.016Z" transform="translate(-1 2.001)" fill="#fff"/>
+      </g>
+    </g>
+  </g>
+</svg>
