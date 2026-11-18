@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="google-site-verification" content="4GdFBg8u9qs6kScGCrFMzClbxLYY-_DW03Ty4N7jak4">
+<title>Ayush Rathore Portfolio | Digital Marketer</title>
+<meta name="description" content="Explore Ayush Rathore Portfolio, the professional portfolio of Ayush Rathore, featuring SEO, WordPress, Google Ads, Meta Ads, digital marketing projects and experience.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://ayushrathoreportfolio.vercel.app/">
+<link rel="icon" type="image/png" href="/assets/avatar.png">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Ayush Rathore Portfolio | Digital Marketing Specialist">
+<meta property="og:description" content="Explore Ayush Rathore Portfolio, the professional portfolio of Ayush Rathore, featuring SEO, WordPress, Google Ads, Meta Ads, digital marketing projects and experience.">
+<meta property="og:url" content="https://ayushrathoreportfolio.vercel.app/">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Ayush Rathore Portfolio | Digital Marketing Specialist">
+<meta name="twitter:description" content="Explore Ayush Rathore Portfolio, the professional portfolio of Ayush Rathore, featuring SEO, WordPress, Google Ads, Meta Ads, digital marketing projects and experience.">
+<style>
+  :root{
+    --bg:#0a0d10;
+    --panel:#11161c;
+    --panel-2:#161d25;
+    --line:#222b34;
+    --text:#e7ecf0;
+    --muted:#7c8794;
+    --green:#39ff88;
+    --green-dim:#1f8f54;
+    --amber:#ffb020;
+    --mono: 'JetBrains Mono', 'Courier New', monospace;
+    --body: 'Inter', -apple-system, sans-serif;
+    --display: 'Space Grotesk', 'Inter', sans-serif;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    background:var(--bg);
+    color:var(--text);
+    font-family:var(--body);
+    overflow-x:hidden;
+  }
+  @media (prefers-reduced-motion: reduce){
+    html{scroll-behavior:auto;}
+    *{animation-duration:0.01ms !important; transition-duration:0.01ms !important;}
+  }
+
+  a{color:var(--green); text-decoration:none;}
+  a:focus-visible, button:focus-visible{outline:2px solid var(--green); outline-offset:3px;}
+
+  /* ===== HUD BAR ===== */
+  #hud{
+    position:fixed; top:0; left:0; right:0; height:54px;
+    background:rgba(10,13,16,0.92);
+    backdrop-filter:blur(8px);
+    border-bottom:1px solid var(--line);
+    z-index:1000;
+    display:flex; align-items:center;
+    padding:0 20px;
+    gap:16px;
+  }
+  #hud .lvl-tag{
+    font-family:var(--mono); font-size:13px; color:var(--bg);
+    background:var(--green); padding:4px 10px; border-radius:3px;
+    font-weight:700; letter-spacing:0.5px; white-space:nowrap;
+  }
+  #hud .xp-track{
+    flex:1; height:8px; background:var(--panel-2);
+    border:1px solid var(--line); border-radius:4px; overflow:hidden;
+    position:relative;
+  }
+  #hud .xp-fill{
+    height:100%; width:0%;
+    background:linear-gradient(90deg, var(--green-dim), var(--green));
+    transition:width 0.1s linear;
+  }
+  #hud .stage-label{
+    font-family:var(--mono); font-size:11px; color:var(--muted);
+    white-space:nowrap; display:none;
+  }
+  @media(min-width:720px){ #hud .stage-label{display:block;} }
+
+  section{padding:120px 24px 100px; max-width:980px; margin:0 auto; position:relative;}
+  .eyebrow{
+    font-family:var(--mono); font-size:12px; color:var(--green);
+    letter-spacing:2px; text-transform:uppercase; margin-bottom:14px;
+    display:flex; align-items:center; gap:8px;
+  }
+  .eyebrow::before{content:'▸'; color:var(--amber);}
+  h1,h2,h3{font-family:var(--display); font-weight:700; letter-spacing:-0.5px;}
+
+  /* ===== HERO (terminal dossier) ===== */
+  #hero{
+    min-height:100vh; max-width:none; width:100%;
+    display:flex; flex-direction:column; justify-content:center;
+    padding:140px 0 60px;
+    overflow:hidden;
+  }
+  #hero .inner{max-width:1180px; width:100%; margin:0 auto; padding:0 24px; position:relative; z-index:2;}
+
+  #hero .code-bg{
+    position:absolute; inset:0; z-index:0;
+    color:var(--green-dim); font-family:var(--mono); font-size:12px; line-height:1.6;
+    white-space:pre; opacity:0.22; filter:blur(0.5px);
+    padding:20px; overflow:hidden;
+    mask-image: radial-gradient(ellipse 60% 55% at 30% 40%, transparent 10%, black 75%);
+  }
+  #hero .scan-glow{
+    position:absolute; inset:0; z-index:1; pointer-events:none;
+    background: radial-gradient(ellipse 50% 50% at 25% 35%, rgba(57,255,136,0.07), transparent 70%);
+  }
+
+  /* top status bar */
+  #hero .topbar{
+    position:absolute; top:0; left:0; right:0; z-index:3;
+    display:flex; justify-content:space-between; align-items:flex-start;
+    padding:18px 24px; font-family:var(--mono);
+  }
+  #hero .meter-block{min-width:220px;}
+  #hero .meter-label{font-size:11px; letter-spacing:2px; color:var(--text); font-weight:700;}
+  #hero .meter-track{height:6px; background:var(--panel-2); border-radius:3px; margin-top:8px; overflow:hidden; max-width:300px;}
+  #hero .meter-fill{height:100%; width:22%; background:linear-gradient(90deg,var(--green-dim),var(--green));}
+  #hero .topbar-right{text-align:right; font-size:11px; color:var(--muted); letter-spacing:1px;}
+  #hero .topbar-right .exp{color:var(--amber); font-size:18px; font-weight:700; font-family:var(--display); margin-top:4px;}
+
+  .sys-tag{
+    display:inline-flex; align-items:center; gap:8px;
+    font-family:var(--mono); font-size:12px; letter-spacing:1px;
+    color:var(--green); border:1px solid var(--green-dim);
+    background:rgba(57,255,136,0.06); padding:7px 14px; border-radius:4px;
+    margin-bottom:22px;
+  }
+  .sys-tag::before{content:'●'; font-size:8px;}
+
+  .terminal-line{
+    font-family:var(--mono); font-size:18px; color:var(--text); margin-bottom:18px;
+  }
+  .terminal-line .prompt{color:var(--green);}
+  .terminal-line .cmd{color:var(--text);}
+  .terminal-line .cursor{display:inline-block; width:9px; height:18px; background:var(--green); margin-left:4px; animation:blink 1s steps(1) infinite; vertical-align:middle;}
+  @keyframes blink{50%{opacity:0;}}
+
+  #hero h1{
+    font-size:clamp(28px,4.5vw,48px); line-height:1.1; letter-spacing:-1px;
+    text-shadow:0 0 30px rgba(57,255,136,0.15);
+  }
+  #hero h1 .accent{color:var(--green);}
+  .loading-line{
+    font-family:var(--mono); font-size:14px; color:var(--green); letter-spacing:1px;
+    margin-top:22px;
+  }
+  .dossier-bio{
+    margin-top:30px; max-width:560px; padding-left:18px; border-left:2px solid var(--line);
+    font-style:italic; color:var(--muted); font-size:16px; line-height:1.7;
+  }
+  .dossier-bio b{color:var(--text); font-style:normal; font-family:var(--mono); font-size:11px; letter-spacing:1px; display:block; margin-bottom:8px; text-transform:uppercase;}
+  .scroll-prompt{
+    margin-top:40px; font-family:var(--mono); font-size:12px; color:var(--muted); letter-spacing:1.5px;
+  }
+  .scroll-prompt::before{content:'› '; color:var(--green);}
+
+  /* character panel */
+  #hero .character-panel{
+    position:absolute; right:0; top:0; bottom:0; width:46%; z-index:1;
+    display:none;
+    align-items:flex-end; justify-content:flex-end;
+  }
+  @media(min-width:880px){ #hero .character-panel{display:flex;} }
+  #hero .character-panel::before{
+    content:''; position:absolute; inset:0;
+    background:linear-gradient(180deg, rgba(255,255,255,0.03), transparent 40%),
+               repeating-linear-gradient(0deg, rgba(57,255,136,0.05) 0 1px, transparent 1px 26px);
+    mask-image: linear-gradient(to right, transparent, black 25%);
+  }
+  .avatar-glyph{
+    position:relative; width:min(500px, 100%); height:clamp(520px, 76vh, 680px); margin:0 20px 0 0;
+    display:flex; align-items:flex-end; justify-content:center;
+  }
+  .avatar-glyph img{
+    width:auto; height:100%; max-width:100%; object-fit:contain; object-position:bottom center;
+    filter:drop-shadow(0 0 50px rgba(57,255,136,0.28)) drop-shadow(0 0 12px rgba(57,255,136,0.15));
+  }
+  .avatar-glyph .glyph-text{
+    font-family:var(--display); font-size:64px; font-weight:700; color:var(--green);
+    text-shadow:0 0 24px rgba(57,255,136,0.5);
+  }
+
+  #hero .stat-row{display:flex; gap:24px; margin-top:28px; flex-wrap:wrap;}
+  #hero .stat{font-family:var(--mono); font-size:12px; color:var(--muted);}
+  #hero .stat b{color:var(--green); font-size:16px; display:block; font-family:var(--display);}
+
+
+  /* ===== QUEST LOG (timeline) ===== */
+  .quest-log{position:relative; margin-top:40px;}
+  .quest-log::before{
+    content:''; position:absolute; left:19px; top:8px; bottom:8px; width:2px;
+    background:linear-gradient(var(--green-dim), var(--line));
+  }
+  .quest{
+    position:relative; padding-left:54px; margin-bottom:36px;
+  }
+  .quest:last-child{margin-bottom:0;}
+  .quest-node{
+    position:absolute; left:0; top:2px; width:40px; height:40px;
+    border-radius:50%; background:var(--panel); border:2px solid var(--green);
+    display:flex; align-items:center; justify-content:center;
+    font-family:var(--mono); font-size:11px; color:var(--green); font-weight:700;
+  }
+  .quest-node.current{
+    border-color:var(--amber); color:var(--amber);
+    box-shadow:0 0 0 4px rgba(255,176,32,0.12);
+  }
+  .quest-card{
+    background:var(--panel); border:1px solid var(--line); border-radius:8px;
+    padding:20px 22px;
+  }
+  .quest-status{
+    font-family:var(--mono); font-size:11px; letter-spacing:1px;
+    color:var(--green); text-transform:uppercase; margin-bottom:6px;
+    display:flex; align-items:center; gap:6px;
+  }
+  .quest-status.active{color:var(--amber);}
+  .quest-card .dates{color:var(--muted); font-family:var(--mono); font-size:12px;}
+  .quest-card h3{font-size:19px; margin-top:4px;}
+  .quest-card .org{color:var(--green); font-size:14px; margin-top:2px; font-family:var(--mono);}
+  .quest-card p{color:var(--muted); margin-top:10px; font-size:14.5px; line-height:1.6;}
+  .quest-card .loc{color:var(--muted); font-family:var(--mono); font-size:11.5px; letter-spacing:0.5px; margin-top:4px;}
+  .quest-card .sub-label{font-family:var(--mono); font-size:11px; color:var(--amber); letter-spacing:1px; text-transform:uppercase; margin-top:16px; margin-bottom:8px;}
+  .quest-card ul.plain{list-style:none; padding-left:0; color:var(--muted); font-size:13.5px; line-height:1.8;}
+  .quest-card ul.plain li::before{content:'›'; color:var(--green); margin-right:6px;}
+  .quest-card blockquote{
+    margin-top:16px; padding:12px 16px; border-left:2px solid var(--green);
+    background:var(--panel-2); font-size:13.5px; color:var(--text); font-style:italic; border-radius:0 4px 4px 0;
+  }
+  .quest-card .reward{margin-top:14px; font-size:13.5px; color:var(--text);}
+  .quest-card .reward b{color:var(--green); font-family:var(--mono); font-size:11px; letter-spacing:1px; text-transform:uppercase; display:block; margin-bottom:4px;}
+  .tag-list{display:flex; flex-wrap:wrap; gap:6px; margin-top:12px;}
+  .tag{
+    font-family:var(--mono); font-size:11px; padding:3px 8px;
+    background:var(--panel-2); border:1px solid var(--line); border-radius:4px;
+    color:var(--muted);
+  }
+
+  /* ===== SKILL TREE ===== */
+  .skill-groups{display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:18px; margin-top:32px;}
+  .skill-group{background:var(--panel); border:1px solid var(--line); border-radius:8px; padding:20px;}
+  .skill-group h3{font-size:14px; font-family:var(--mono); color:var(--amber); letter-spacing:1px; text-transform:uppercase; margin-bottom:14px;}
+  .skill-bar-row{margin-bottom:12px;}
+  .skill-bar-row:last-child{margin-bottom:0;}
+  .skill-bar-row .name{font-size:13.5px; margin-bottom:5px; display:flex; justify-content:space-between;}
+  .skill-bar-row .name span:last-child{font-family:var(--mono); color:var(--muted); font-size:11px;}
+  .skill-track{height:6px; background:var(--panel-2); border-radius:3px; overflow:hidden;}
+  .skill-fill{height:100%; background:linear-gradient(90deg, var(--green-dim), var(--green)); width:0%; transition:width 1.2s cubic-bezier(.2,.8,.2,1);}
+
+  /* ===== LOOT / PROJECTS ===== */
+  .loot-grid{display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:16px; margin-top:32px;}
+  .loot-card{
+    background:var(--panel); border:1px solid var(--line); border-radius:8px; padding:20px;
+    transition:border-color 0.2s, transform 0.2s;
+  }
+  .loot-card:hover{border-color:var(--green); transform:translateY(-3px);}
+  .loot-card .rarity{font-family:var(--mono); font-size:10px; color:var(--amber); letter-spacing:1px; text-transform:uppercase;}
+  .loot-card h3{font-size:17px; margin-top:6px;}
+  .loot-card .sub{color:var(--green); font-size:12.5px; font-family:var(--mono); margin-top:2px;}
+  .loot-card ul{margin-top:12px; padding-left:0; list-style:none; color:var(--muted); font-size:13px; line-height:1.7;}
+  .loot-card li::before{content:'›'; color:var(--green); margin-right:6px;}
+
+  /* ===== ACHIEVEMENTS ===== */
+  .ach-grid{display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:14px; margin-top:32px;}
+  .ach{
+    background:var(--panel); border:1px solid var(--green-dim); border-radius:8px;
+    padding:16px 18px; display:flex; gap:14px; align-items:flex-start;
+  }
+  .ach .badge{
+    width:38px; height:38px; flex:none; border-radius:8px;
+    background:radial-gradient(circle at 30% 30%, var(--green), var(--green-dim));
+    display:flex; align-items:center; justify-content:center;
+    font-size:18px; color:var(--bg); font-weight:700;
+  }
+  .ach .name{font-size:13.5px; font-weight:600;}
+  .ach .from{font-family:var(--mono); font-size:11px; color:var(--muted); margin-top:3px;}
+
+  /* ===== MOTTO ===== */
+  .motto-box{
+    background:var(--panel); border:1px solid var(--line); border-left:3px solid var(--green);
+    border-radius:6px; padding:28px 32px; margin-top:28px;
+  }
+  .motto-box p{font-size:17px; line-height:1.8; color:var(--text);}
+  .motto-box p + p{margin-top:14px; color:var(--muted); font-size:15px;}
+
+  /* ===== NEXT QUEST / CONTACT ===== */
+  #contact{text-align:center;}
+  #contact .crt{
+    border:1px solid var(--line); background:var(--panel); border-radius:10px;
+    padding:48px 32px; margin-top:24px;
+  }
+  #contact h2{font-size:30px;}
+  #contact p{color:var(--muted); margin-top:10px; font-size:15px;}
+  .cta-row{display:flex; gap:14px; justify-content:center; margin-top:28px; flex-wrap:wrap;}
+  .btn{
+    font-family:var(--mono); font-size:13px; padding:12px 22px; border-radius:6px;
+    border:1px solid var(--green); color:var(--green); background:transparent;
+    cursor:pointer; transition:all 0.2s; letter-spacing:0.5px;
+  }
+  .btn.solid{background:var(--green); color:var(--bg);}
+  .btn:hover{background:var(--green); color:var(--bg);}
+
+  footer{
+    text-align:center; padding:36px 24px; color:var(--muted); font-family:var(--mono); font-size:11.5px;
+    border-top:1px solid var(--line);
+  }
+
+  .reveal{opacity:0; transform:translateY(24px); transition:opacity 0.6s ease, transform 0.6s ease;}
+  .reveal.in{opacity:1; transform:translateY(0);}
+</style>
+</head>
+<body>
+
+<div id="hud">
+  <div class="lvl-tag" id="lvlTag">LVL 1</div>
+  <div class="xp-track"><div class="xp-fill" id="xpFill"></div></div>
+  <div class="stage-label" id="stageLabel">College</div>
+</div>
+
+<section id="hero">
+  <div class="code-bg" id="codeBg"></div>
+  <div class="scan-glow"></div>
+
+  <div class="topbar">
+    <div class="meter-block">
+      <div class="meter-label">FOCUS</div>
+      <div class="meter-track"><div class="meter-fill"></div></div>
+    </div>
+    <div class="topbar-right">
+      QUESTS / SKILLS<br>
+      <span class="exp">6+</span>
+    </div>
+  </div>
+
+  <div class="character-panel">
+    <div class="avatar-glyph">
+      <img src="assets/avatar.png" alt="Hero avatar">
+    </div>
+  </div>
+
+  <div class="inner">
+    <div class="sys-tag">SYSTEM STATUS: ONLINE // GROWTH_CORE_LOADED</div>
+
+    <div class="terminal-line">
+      <span class="prompt">C:\&gt;</span> <span class="cmd">initialize_dossier.exe target</span><span class="cursor"></span>
+    </div>
+
+    <h1>AYUSH <span class="accent">RATHORE</span></h1>
+
+    <div class="loading-line">LOADING GROWTH PROTOCOLS...</div>
+
+    <div class="dossier-bio">
+      <b>Bio_Status</b>
+      "Digital Marketing Executive | SEO, WordPress, performance, and AI marketing. I live to ship things that rank, load fast, and convert. Always learning, always building."
+    </div>
+
+    <div class="stat-row">
+      <div class="stat"><b>6</b>Quests Completed</div>
+      <div class="stat"><b>5+</b>Sites Shipped</div>
+      <div class="stat"><b>4</b>Certifications</div>
+      <div class="stat"><b>2026</b>Current Arc</div>
+    </div>
+
+    <div class="scroll-prompt">PRESS SCROLL TO SPAWN.</div>
+  </div>
+</section>
+
+<section id="timeline">
+  <div class="eyebrow reveal">Quest Log</div>
+  <h2 class="reveal">The Career Timeline</h2>
+  <div class="quest-log">
+
+    <div class="quest reveal">
+      <div class="quest-node">01</div>
+      <div class="quest-card">
+        <div class="quest-status">✓ Completed</div>
+        <div class="dates">Est. 2003</div>
+        <div class="loc">HOSHANGABAD, MADHYA PRADESH</div>
+        <h3>The Curious Kid</h3>
+        <p>I wasn't born knowing code or marketing. I was simply fascinated by the internet. Every website made me wonder: "How is this built?" That curiosity slowly became an obsession.</p>
+        <div class="sub-label">Starting Inventory</div>
+        <ul class="plain">
+          <li>Endless Curiosity</li>
+          <li>Internet Connection</li>
+          <li>Lots of Questions</li>
+        </ul>
+        <div class="reward"><b>Mission Started</b>Discover how businesses grow online.</div>
+        <blockquote>"Every expert was once someone who simply kept asking 'How?'"</blockquote>
+      </div>
+    </div>
+
+    <div class="quest reveal">
+      <div class="quest-node">02</div>
+      <div class="quest-card">
+        <div class="quest-status">✓ Completed</div>
+        <div class="dates">2022 to 2025</div>
+        <h3>The Foundation</h3>
+        <div class="org">Bachelor of Commerce (Computer Applications)</div>
+        <p>While pursuing my graduation, I realized I wanted to build things instead of simply studying them. Business, technology, and digital marketing fascinated me far more than textbooks; this was where curiosity evolved into a career path.</p>
+        <div class="sub-label">Abilities Unlocked</div>
+        <ul class="plain">
+          <li>Business Fundamentals</li>
+          <li>Computer Applications</li>
+          <li>Analytical Thinking</li>
+          <li>Problem Solving</li>
+        </ul>
+        <div class="reward"><b>Achievement</b>Found the career I genuinely wanted to pursue.</div>
+      </div>
+    </div>
+
+    <div class="quest reveal">
+      <div class="quest-node">03</div>
+      <div class="quest-card">
+        <div class="quest-status">✓ Completed</div>
+        <div class="dates">Jun 2025 to Sep 2025</div>
+        <h3>Skill Tree Unlocked</h3>
+        <div class="org">Practical Diploma in Digital Marketing, Skills Elephant, Indore</div>
+        <p>I immersed myself in real world assignments and continuous experimentation, focusing on how businesses actually grow online instead of just completing a course.</p>
+        <div class="tag-list">
+          <span class="tag">SEO</span><span class="tag">Technical SEO</span><span class="tag">Local SEO</span>
+          <span class="tag">WordPress</span><span class="tag">Google Ads</span><span class="tag">Meta Ads</span>
+          <span class="tag">GA</span><span class="tag">GSC</span><span class="tag">Email Marketing</span>
+        </div>
+        <div class="reward"><b>Reward</b>A complete digital marketing toolkit ready for real world challenges.</div>
+        <blockquote>"Learning became a daily habit, not just a course."</blockquote>
+      </div>
+    </div>
+
+    <div class="quest reveal">
+      <div class="quest-node">04</div>
+      <div class="quest-card">
+        <div class="quest-status">✓ Completed</div>
+        <div class="dates">Oct 2025 to Jan 2026</div>
+        <h3>First Professional Quest</h3>
+        <div class="org">Digital Marketing Intern at 20Clicks</div>
+        <p>This was where theory became execution. I worked on live websites, SEO campaigns, and digital marketing strategies while collaborating on projects that generated measurable business results.</p>
+        <div class="sub-label">Projects Completed</div>
+        <ul class="plain">
+          <li>DigifyClinic · HeadlessOps · 20Clicks</li>
+          <li>Dr. Krishna Meena · HeyTiffin</li>
+        </ul>
+        <div class="reward"><b>Achievement</b>Built websites that weren't just visually appealing; they were designed to rank, perform, and convert.</div>
+      </div>
+    </div>
+
+    <div class="quest reveal">
+      <div class="quest-node current">05</div>
+      <div class="quest-card">
+        <div class="quest-status active">★ In Progress</div>
+        <div class="dates">Jan 2026 to Present</div>
+        <h3>Professional Mode</h3>
+        <div class="org">Digital Marketing Executive at Codiotic Technologies Pvt. Ltd.</div>
+        <p>Today I work on end to end digital marketing strategies across multiple industries, combining SEO, WordPress development, AI tools, analytics, and performance marketing to help businesses achieve measurable growth.</p>
+        <div class="reward"><b>Current Mission</b>Helping businesses grow through strategic digital experiences.</div>
+      </div>
+    </div>
+
+    <div class="quest reveal">
+      <div class="quest-node">06</div>
+
+      <div class="quest-card">
+
+        <div class="quest-status active">★ Ongoing</div>
+
+        <div class="dates">Jan 2026 to Present</div>
+
+        <h3>Product Operations</h3>
+
+        <div class="org">
+          Show Me There • Project at Codiotic Technologies Pvt. Ltd.
+        </div>
+
+        <p>
+          As part of my role at <strong>Codiotic Technologies Pvt. Ltd.</strong>,
+          I contribute to the operations and digital growth of
+          <strong>Show Me There</strong>, a verified outdoor advertising platform.
+          Working alongside cross-functional teams has given me hands-on experience
+          in product operations, SEO, website strategy, and business workflows.
+        </p>
+
+        <div class="sub-label">
+          MY RESPONSIBILITIES
+        </div>
+
+        <ul class="plain">
+          <li>Product Operations & Workflow Management</li>
+          <li>Website Planning & Content Updates</li>
+          <li>SEO Strategy & Optimization</li>
+          <li>Landing Page Planning</li>
+          <li>Information Architecture</li>
+          <li>Brand Messaging</li>
+          <li>AI Creative Concepts</li>
+          <li>Campaign Workflow Coordination</li>
+          <li>Cross functional Team Collaboration</li>
+        </ul>
+
+        <div class="reward">
+          <b>Experience Gained</b>
+
+          Product Thinking • Startup Operations • Digital Strategy • Team Collaboration • Process Improvement
+        </div>
+
+        <blockquote>
+          "Great products aren't built by one person; they're built by teams solving real problems together."
+        </blockquote>
+
+      </div>
+    </div>
+
+    <div class="quest reveal">
+      <div class="quest-node">F</div>
+      <div class="quest-card">
+        <div class="quest-status active">★ Main Quest Active</div>
+        <h3>Build a Brand That Matters</h3>
+        <p>I don't know exactly what kind of company I'll build. Maybe software. Maybe an AI product. Maybe something completely different. What I do know is this: I'm intentionally collecting the skills, experiences, and mindset required to build something meaningful.</p>
+        <div class="sub-label">Current Quest</div>
+        <ul class="plain">
+          <li>Keep Learning</li>
+          <li>Keep Building</li>
+          <li>Solve Bigger Problems</li>
+          <li>Build Products That Matter</li>
+          <li>Create a Brand People Remember</li>
+        </ul>
+        <div class="reward"><b>Status</b>Still Grinding...</div>
+        <blockquote>"I don't have the final blueprint yet. I'm building the person who can create it."</blockquote>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section id="skills">
+  <div class="eyebrow reveal">Character Build</div>
+  <h2 class="reveal">Skill Tree</h2>
+  <div class="skill-groups reveal">
+
+    <div class="skill-group">
+      <h3>Search Marketing</h3>
+      <div class="skill-bar-row"><div class="name"><span>SEO / Technical SEO</span><span>92</span></div><div class="skill-track"><div class="skill-fill" data-val="92"></div></div></div>
+      <div class="skill-bar-row"><div class="name"><span>Local SEO</span><span>85</span></div><div class="skill-track"><div class="skill-fill" data-val="85"></div></div></div>
+      <div class="skill-bar-row"><div class="name"><span>Keyword & Competitor Research</span><span>88</span></div><div class="skill-track"><div class="skill-fill" data-val="88"></div></div></div>
+    </div>
+
+    <div class="skill-group">
+      <h3>Website Development</h3>
+      <div class="skill-bar-row"><div class="name"><span>WordPress / Elementor</span><span>90</span></div><div class="skill-track"><div class="skill-fill" data-val="90"></div></div></div>
+      <div class="skill-bar-row"><div class="name"><span>Landing Page Development</span><span>87</span></div><div class="skill-track"><div class="skill-fill" data-val="87"></div></div></div>
+      <div class="skill-bar-row"><div class="name"><span>Core Web Vitals</span><span>80</span></div><div class="skill-track"><div class="skill-fill" data-val="80"></div></div></div>
+    </div>
+
+    <div class="skill-group">
+      <h3>Paid & Performance</h3>
+      <div class="skill-bar-row"><div class="name"><span>Google Ads / Meta Ads</span><span>78</span></div><div class="skill-track"><div class="skill-fill" data-val="78"></div></div></div>
+      <div class="skill-bar-row"><div class="name"><span>Lead Generation</span><span>82</span></div><div class="skill-track"><div class="skill-fill" data-val="82"></div></div></div>
+      <div class="skill-bar-row"><div class="name"><span>Conversion Optimization</span><span>80</span></div><div class="skill-track"><div class="skill-fill" data-val="80"></div></div></div>
+    </div>
+
+    <div class="skill-group">
+      <h3>Analytics</h3>
+      <div class="skill-bar-row"><div class="name"><span>Google Analytics / GSC</span><span>88</span></div><div class="skill-track"><div class="skill-fill" data-val="88"></div></div></div>
+      <div class="skill-bar-row"><div class="name"><span>Google Tag Manager</span><span>75</span></div><div class="skill-track"><div class="skill-fill" data-val="75"></div></div></div>
+    </div>
+
+    <div class="skill-group">
+      <h3>Content Marketing</h3>
+      <div class="skill-bar-row"><div class="name"><span>Landing Page Copywriting</span><span>85</span></div><div class="skill-track"><div class="skill-fill" data-val="85"></div></div></div>
+      <div class="skill-bar-row"><div class="name"><span>Blog & Content Strategy</span><span>83</span></div><div class="skill-track"><div class="skill-fill" data-val="83"></div></div></div>
+    </div>
+
+    <div class="skill-group">
+      <h3>AI & Productivity</h3>
+      <div class="skill-bar-row"><div class="name"><span>AI Prompt Engineering</span><span>89</span></div><div class="skill-track"><div class="skill-fill" data-val="89"></div></div></div>
+      <div class="skill-bar-row"><div class="name"><span>AI Content & Image Strategy</span><span>84</span></div><div class="skill-track"><div class="skill-fill" data-val="84"></div></div></div>
+    </div>
+
+  </div>
+</section>
+
+<section id="loot">
+  <div class="eyebrow reveal">Loot Acquired</div>
+  <h2 class="reveal">Websites &amp; Projects Shipped</h2>
+  <div class="loot-grid reveal">
+
+    <div class="loot-card">
+      <div class="rarity">Healthcare</div>
+      <h3>DigifyClinic</h3>
+      <div class="sub">Healthcare Digital Marketing Platform</div>
+      <ul>
+        <li>Complete website development</li>
+        <li>SEO optimization</li>
+        <li>Landing pages & performance tuning</li>
+      </ul>
+    </div>
+
+    <div class="loot-card">
+      <div class="rarity">AI / Automation</div>
+      <h3>HeadlessOps</h3>
+      <div class="sub">AI & Automation Solutions</div>
+      <ul>
+        <li>Business website build</li>
+        <li>Responsive design</li>
+        <li>SEO implementation</li>
+      </ul>
+    </div>
+
+    <div class="loot-card">
+      <div class="rarity">Agency</div>
+      <h3>20Clicks</h3>
+      <div class="sub">Digital Marketing Agency</div>
+      <ul>
+        <li>Company website & landing pages</li>
+        <li>Technical SEO</li>
+        <li>Website optimization</li>
+      </ul>
+    </div>
+
+    <div class="loot-card">
+      <div class="rarity">Healthcare</div>
+      <h3>Dr. Krishna Meena</h3>
+      <div class="sub">Healthcare Website</div>
+      <ul>
+        <li>WordPress development</li>
+        <li>Healthcare SEO</li>
+        <li>Appointment landing pages</li>
+      </ul>
+    </div>
+
+    <div class="loot-card">
+      <div class="rarity">Food Delivery</div>
+      <h3>HeyTiffin</h3>
+      <div class="sub">Food Delivery Platform</div>
+      <ul>
+        <li>Responsive website</li>
+        <li>UX optimization</li>
+        <li>Local SEO setup</li>
+      </ul>
+    </div>
+
+    <div class="loot-card">
+      <div class="rarity">Legendary Drop</div>
+      <h3>Show Me There</h3>
+      <div class="sub">India's first verified outdoor advertising platform</div>
+      <ul>
+        <li>Website planning & information architecture</li>
+        <li>SEO & brand messaging strategy</li>
+        <li>AI creative concepts & campaign workflow</li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+<section id="achievements">
+  <div class="eyebrow reveal">Achievements Unlocked</div>
+  <h2 class="reveal">Certifications</h2>
+  <div class="ach-grid reveal">
+    <div class="ach"><div class="badge">★</div><div><div class="name">Social Media Marketing</div><div class="from">HubSpot</div></div></div>
+    <div class="ach"><div class="badge">★</div><div><div class="name">Inbound Marketing</div><div class="from">HubSpot</div></div></div>
+    <div class="ach"><div class="badge">★</div><div><div class="name">SEO Strategy</div><div class="from">Semrush Academy</div></div></div>
+    <div class="ach"><div class="badge">★</div><div><div class="name">Become an AI Powered Marketer</div><div class="from">Semrush Academy</div></div></div>
+  </div>
+</section>
+
+<section id="motto">
+  <div class="eyebrow reveal">Player Motto</div>
+  <h2 class="reveal">Mission</h2>
+  <div class="motto-box reveal">
+    <p>Help businesses build a strong digital presence through strategic marketing, SEO, and modern web development; every website should look professional <em>and</em> deliver measurable results.</p>
+    <p>Career objective: combine SEO, WordPress development, AI, and performance marketing to build digital solutions with real business impact, and keep leveling up alongside the tech.</p>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="eyebrow reveal">Next Quest</div>
+  <div class="crt reveal">
+    <h2>Got a brand that needs to level up?</h2>
+    <p>Open to SEO, WordPress, and growth marketing projects. Drop a message and let's plan the next quest.</p>
+    <div class="cta-row">
+      <a class="btn solid" href="mailto:ayushrathore.dm@gmail.com">Email Me</a>
+      <a class="btn" href="https://www.linkedin.com/in/ayush-rathoree/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      <a class="btn" href="#" target="_blank">Resume</a>
+    </div>
+  </div>
+</section>
+
+<footer>AYUSH RATHORE | SAVE FILE LAST UPDATED 2026 · BUILT FOR THE NEXT QUEST</footer>
+
+<script>
+  // Decorative fake terminal log for hero background
+  (function(){
+    const lines = [];
+    const tokens = ['init','fetch','parse','build','deploy','crawl','index','rank','audit','optimize','render','cache','sync','queue','load'];
+    const status = ['ok','done','200','pass','queued','warn','ready'];
+    for(let i=0;i<70;i++){
+      const t = tokens[Math.floor(Math.random()*tokens.length)];
+      const s = status[Math.floor(Math.random()*status.length)];
+      const n = Math.floor(Math.random()*9000+1000);
+      lines.push(`[${String(i).padStart(3,'0')}] ${t}_module(${n}) :: ${s}`);
+    }
+    const el = document.getElementById('codeBg');
+    if(el) el.textContent = lines.join('\n');
+  })();
+
+</script>
+<script>
+  // HUD: scroll progress drives Level + XP bar across career stages
+  const stages = [
+    {p:0.00,label:'The Curious Kid',lvl:1},
+    {p:0.14,label:'The Foundation',lvl:2},
+    {p:0.28,label:'Skill Tree Unlocked',lvl:3},
+    {p:0.42,label:'First Professional Quest',lvl:4},
+    {p:0.56,label:'Professional Mode',lvl:5},
+    {p:0.68,label:'Building Digital Products',lvl:6},
+    {p:0.80,label:'Final Level',lvl:7},
+    {p:0.90,label:'Skill Tree & Loot',lvl:8},
+    {p:1.00,label:'Endgame',lvl:9}
+  ];
+  const xpFill = document.getElementById('xpFill');
+  const lvlTag = document.getElementById('lvlTag');
+  const stageLabel = document.getElementById('stageLabel');
+
+  function onScroll(){
+    const doc = document.documentElement;
+    const scrollTop = doc.scrollTop || document.body.scrollTop;
+    const scrollH = doc.scrollHeight - doc.clientHeight;
+    const progress = Math.min(1, Math.max(0, scrollTop / scrollH));
+    xpFill.style.width = (progress*100) + '%';
+    let current = stages[0];
+    for(const s of stages){ if(progress >= s.p) current = s; }
+    lvlTag.textContent = 'LVL ' + current.lvl;
+    stageLabel.textContent = current.label;
+  }
+  document.addEventListener('scroll', onScroll, {passive:true});
+  onScroll();
+
+  // Reveal on scroll
+  const revealEls = document.querySelectorAll('.reveal');
+  const io = new IntersectionObserver((entries)=>{
+    entries.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('in'); } });
+  }, {threshold:0.12});
+  revealEls.forEach(el=>io.observe(el));
+
+  // Skill bar fill on view
+  const skillFills = document.querySelectorAll('.skill-fill');
+  const io2 = new IntersectionObserver((entries)=>{
+    entries.forEach(e=>{
+      if(e.isIntersecting){
+        const els = e.target.querySelectorAll ? e.target.querySelectorAll('.skill-fill') : [];
+      }
+    });
+  });
+  const skillGroupObserver = new IntersectionObserver((entries)=>{
+    entries.forEach(entry=>{
+      if(entry.isIntersecting){
+        entry.target.querySelectorAll('.skill-fill').forEach(f=>{
+          f.style.width = f.dataset.val + '%';
+        });
+        skillGroupObserver.unobserve(entry.target);
+      }
+    });
+  }, {threshold:0.2});
+  document.querySelectorAll('.skill-group').forEach(g=>skillGroupObserver.observe(g));
+</script>
+</body>
+</html>

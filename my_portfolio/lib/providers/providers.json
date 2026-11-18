@@ -1,0 +1,162 @@
+// // lib/providers/providers.dart
+// import 'package:flutter_riverpod/flutter_riverpod.dart';
+// import 'package:flutter/material.dart';
+//
+// final localeProvider = StateProvider<Locale>((ref) => const Locale('en'));
+// final themeProvider = StateProvider<ThemeMode>((ref) => ThemeMode.system);
+// final projectProvider = FutureProvider<List<Project>>((ref) async {
+//   return await ProjectRepository().getProjects();
+// });
+
+
+//
+// import 'package:flutter/material.dart';
+// import 'package:flutter_localizations/flutter_localizations.dart';
+// import 'package:intl/intl.dart';
+//
+// class AppLocalizations {
+//   AppLocalizations(this.localeName);
+//
+//   final String localeName;
+//
+//   static const LocalizationsDelegate<AppLocalizations> delegate =
+//   _AppLocalizationsDelegate();
+//
+//   static Future<AppLocalizations> load(Locale locale) {
+//     return Future.value(AppLocalizations(locale.languageCode));
+//   }
+//
+//   // Home
+//   String get welcome => {
+//     'en': 'Welcome',
+//     'hi': 'स्वागत है',
+//     'es': 'Bienvenido',
+//   }[localeName]!;
+//
+//   String get greeting => {
+//     'en': 'Hi, I\'m Rohit Surage',
+//     'hi': 'हाय, मैं रोहित सुरंगे हूँ',
+//     'es': 'Hola, soy Rohit Surage',
+//   }[localeName]!;
+//
+//   String get intro => {
+//     'en': 'Building innovative cross-platform applications with Flutter',
+//     'hi': 'फ्लटर के साथ नवीन क्रॉस-प्लेटफॉर्म एप्लिकेशन बनाना',
+//     'es': 'Construyendo aplicaciones multiplataforma innovadoras con Flutter',
+//   }[localeName]!;
+//
+//   // Navigation
+//   String get home => {
+//     'en': 'Home',
+//     'hi': 'होम',
+//     'es': 'Inicio',
+//   }[localeName]!;
+//
+//   String get portfolio => {
+//     'en': 'Portfolio',
+//     'hi': 'पोर्टफोलियो',
+//     'es': 'Portafolio',
+//   }[localeName]!;
+//
+//   String get about => {
+//     'en': 'About',
+//     'hi': 'के बारे में',
+//     'es': 'Acerca de',
+//   }[localeName]!;
+//
+//   String get contact => {
+//     'en': 'Contact',
+//     'hi': 'संपर्क',
+//     'es': 'Contacto',
+//   }[localeName]!;
+//
+//   // About
+//   String get aboutMe => {
+//     'en': 'About Me',
+//     'hi': 'मेरे बारे में',
+//     'es': 'Sobre mí',
+//   }[localeName]!;
+//
+//   String get aboutDescription => {
+//     'en': 'I\'m a passionate Flutter developer with 5+ years of experience creating high-performance applications for mobile, web, and desktop platforms.',
+//     'hi': 'मैं एक उत्साही फ्लटर डेवलपर हूँ, जिसके पास मोबाइल, वेब और डेस्कटॉप प्लेटफॉर्म के लिए उच्च-प्रदर्शन अनुप्रयोग बनाने का 5+ वर्षों का अनुभव है।',
+//     'es': 'Soy un desarrollador de Flutter apasionado con más de 5 años de experiencia creando aplicaciones de alto rendimiento para plataformas móviles, web y de escritorio.',
+//   }[localeName]!;
+//
+//   // Contact
+//   String get getInTouch => {
+//     'en': 'Get in Touch',
+//     'hi': 'संपर्क करें',
+//     'es': 'Ponte en contacto',
+//   }[localeName]!;
+// }
+//
+// class _AppLocalizationsDelegate
+//     extends LocalizationsDelegate<AppLocalizations> {
+//   const _AppLocalizationsDelegate();
+//
+//   @override
+//   bool isSupported(Locale locale) => ['en', 'hi', 'es'].contains(locale.languageCode);
+//
+//   @override
+//   Future<AppLocalizations> load(Locale locale) => AppLocalizations.load(locale);
+//
+//   @override
+//   bool shouldReload(_AppLocalizationsDelegate old) => false;
+// }
+
+
+{
+"welcome": "Welcome",
+"greeting": "Hi, I'm Rohit Surage",
+"intro": "Building innovative cross-platform applications with Flutter",
+"home": "Home",
+"portfolio": "Portfolio",
+"about": "About",
+"contact": "Contact",
+"about_me": "About Me",
+"about_description": "I'm a passionate Flutter developer with 5+ years of experience creating high-performance applications for mobile, web, and desktop platforms.",
+"get_in_touch": "Get in Touch",
+"flutter_social_app": "Flutter Social App",
+"social_app_desc": "A modern social media app with real-time chat",
+"ecommerce_platform": "E-commerce Platform",
+"ecommerce_desc": "Scalable e-commerce solution with payment integration"
+}
+
+
+
+{
+"welcome": "स्वागत है",
+"greeting": "हाय, मैं रोहित सुरंगे हूँ",
+"intro": "फ्लटर के साथ नवीन क्रॉस-प्लेटफॉर्म एप्लिकेशन बनाना",
+"home": "होम",
+"portfolio": "पोर्टफोलियो",
+"about": "के बारे में",
+"contact": "संपर्क",
+"about_me": "मेरे बारे में",
+"about_description": "मैं एक उत्साही फ्लटर डेवलपर हूँ, जिसके पास मोबाइल, वेब और डेस्कटॉप प्लेटफॉर्म के लिए उच्च-प्रदर्शन अनुप्रयोग बनाने का 5+ वर्षों का अनुभव है।",
+"get_in_touch": "संपर्क करें",
+"flutter_social_app": "फ्लटर सोशल ऐप",
+"social_app_desc": "वास्तविक समय चैट के साथ एक आधुनिक सोशल मीडिया ऐप",
+"ecommerce_platform": "ई-कॉमर्स प्लेटफॉर्म",
+"ecommerce_desc": "भुगतान एकीकरण के साथ स्केलेबल ई-कॉमर्स समाधान"
+}
+
+
+
+{
+"welcome": "Bienvenido",
+"greeting": "Hola, soy Rohit Surage",
+"intro": "Construyendo aplicaciones multiplataforma innovadoras con Flutter",
+"home": "Inicio",
+"portfolio": "Portafolio",
+"about": "Acerca de",
+"contact": "Contacto",
+"about_me": "Sobre mí",
+"about_description": "Soy un desarrollador de Flutter apasionado con más de 5 años de experiencia creando aplicaciones de alto rendimiento para plataformas móviles, web y de escritorio.",
+"get_in_touch": "Ponte en contacto",
+"flutter_social_app": "Aplicación Social Flutter",
+"social_app_desc": "Una aplicación de redes sociales moderna con chat en tiempo real",
+"ecommerce_platform": "Plataforma de Comercio Electrónico",
+"ecommerce_desc": "Solución de comercio electrónico escalable con integración de pagos"
+}

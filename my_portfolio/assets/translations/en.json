@@ -1,0 +1,17 @@
+
+{
+  "welcome": "Welcome",
+  "greeting": "Hi, I'm Rohit Surage",
+  "intro": "Building innovative cross-platform applications with Flutter",
+  "home": "Home",
+  "portfolio": "Portfolio",
+  "about": "About",
+  "contact": "Contact",
+  "about_me": "About Me",
+  "about_description": "I'm a passionate Flutter developer with 5+ years of experience creating high-performance applications for mobile, web, and desktop platforms.",
+  "get_in_touch": "Get in Touch",
+  "flutter_social_app": "Flutter Social App",
+  "social_app_desc": "A modern social media app with real-time chat",
+  "ecommerce_platform": "E-commerce Platform",
+  "ecommerce_desc": "Scalable e-commerce solution with payment integration"
+}

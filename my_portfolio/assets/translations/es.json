@@ -1,0 +1,16 @@
+{
+  "welcome": "Bienvenido",
+  "greeting": "Hola, soy Rohit Surage",
+  "intro": "Construyendo aplicaciones multiplataforma innovadoras con Flutter",
+  "home": "Inicio",
+  "portfolio": "Portafolio",
+  "about": "Acerca de",
+  "contact": "Contacto",
+  "about_me": "Sobre mí",
+  "about_description": "Soy un desarrollador de Flutter apasionado con más de 5 años de experiencia creando aplicaciones de alto rendimiento para plataformas móviles, web y de escritorio.",
+  "get_in_touch": "Ponte en contacto",
+  "flutter_social_app": "Aplicación Social Flutter",
+  "social_app_desc": "Una aplicación de redes sociales moderna con chat en tiempo real",
+  "ecommerce_platform": "Plataforma de Comercio Electrónico",
+  "ecommerce_desc": "Solución de comercio electrónico escalable con integración de pagos"
+}
